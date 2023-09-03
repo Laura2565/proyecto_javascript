@@ -1,11 +1,8 @@
 .modal-gallery {
     width: 550px;
-  
-
-    &__background {
-      
+    &__background {      
         @include modal-background;
-        // display: grid;
+        display: none;
         place-content: center;
     }
 
@@ -41,7 +38,6 @@
     &__thumnail {
         width: 90px;
         border-radius: 16px;
-
         &:hover {
             cursor: pointer;
             border: 2px solid $Pink;
@@ -53,11 +49,10 @@
     }
 
     &__next {
-        @include image-btn (190px, 420px, true);
+        @include image-btn (190px, 520px, true);
 
     }
     
-
 
 }
 

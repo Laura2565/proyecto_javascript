@@ -1,14 +1,11 @@
 .input {
     height: 57px;
     display: flex;
+    justify-content: space-between;
+    background-color: rgb(235, 229, 229);
     
     &__minus {
-        width: 25px;
-        height: 100%;        
-        padding: 22px 5px;
-        &:hover{
-            cursor: pointer;
-        }
+       @include cambiarNumero(24px, 5px);
     }
     &__number {
         width: 100%;
@@ -17,15 +14,10 @@
         font-weight: 700;
         text-align: center;
         outline: none;
-
+        background-color: rgb(235, 229, 229); 
     }
     &__plus {
-        width: 25px;
-        height: 100%;        
-        padding: 24px 2px;
-        &:hover{
-            cursor: pointer;
-        }
+        @include cambiarNumero(19px, 3px);
     }
 
 

@@ -16,7 +16,7 @@
     }
 
     &__chekout-container {
-        padding: 5px;
+        padding: 24px;
     }
 
 
@@ -39,9 +39,9 @@
         font-weight: 700;
     }
 
-    &__delete {
-        width: 20px;
+    &__delete:hover {       
         cursor: pointer;
+        width: 20px;
     }
    &__checkount {
    

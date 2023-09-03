@@ -18,9 +18,10 @@ $Black: black;
     top: 0;
     lef: 0;
     width: 100%;
-    height: 100;
+    height: 100%;
     z-index: 1;
     display: none;
+    overflow: hidden;
   }
  
   @mixin image-btn ($top, $left, $showDesktop) {  
@@ -45,6 +46,15 @@ $Black: black;
     }
   }
  
+   @mixin cambiarNumero($pv, $ph){
+    width: 25px;
+    height: 100%;
+    padding: $pv $ph;
+    &:hover {
+      cursor: pointer;
+    }
+   }
+
   @mixin button {
     background-color:$Pink;
     width: 100%;
@@ -57,7 +67,7 @@ $Black: black;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 16px;
+    gap: 16px;    
     &:hover {
       cursor: pointer;
       opacity: 0.5;
