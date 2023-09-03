@@ -1,3 +1,26 @@
+
+const minusBtn = document.querySelector('.input__minus');
+const plusBtn = document.querySelector('.input__plus');
+let userInput = document.querySelector('.input__number');
+
+let userInputNumber = 0;
+
+plusBtn.addEventListener('click', ()=>{
+    userInputNumber++;
+    userInput.value = userInputNumber;
+    console.log(userInputNumber);
+});
+
+minusBtn.addEventListener('click', ()=>{
+    userInputNumber--;
+    if(userInputNumber <= 0){
+        userInputNumber = 0;
+    }
+    userInput.value = userInputNumber;
+    console.log(userInputNumber);
+});
+
+
 const addToCartBtn = document.querySelector('.details__button');
 let cartNotification = document.querySelector('.header__cart--notification');
 let lastValue = parseInt(cartNotification.innerText);
@@ -11,10 +34,9 @@ addToCartBtn.addEventListener('click', ()=>{
     
 });
 
-//Mostrar el modal con el detalle del carrito
+
 const cartIconBtn = document.querySelector('.header__cart');
 const cartModal = document.querySelector('.cart-modal');
-// let priceModal = document.querySelector('.cart-modal__price');
 const productContainer = document.querySelector('.cart-modal__chekout-container');
 
 cartIconBtn.addEventListener('click', ()=>{
@@ -28,7 +50,6 @@ cartIconBtn.addEventListener('click', ()=>{
     
 });
 
-//Borrar el contenido del carrito
 function deleteProduct(){
     const deleteProductBtn = document.querySelector('.cart-modal__delete');
     deleteProductBtn.addEventListener('click', ()=>{
@@ -38,9 +59,9 @@ function deleteProduct(){
     });
 }
 
-// Cambiar imagenes cuando se presione los botones flecha.
+
 const imageContainer = document.querySelector('.gallery__image-container');
-const previusGalleryBtn = document.querySelector('.gallery__previus');
+const previusGalleryBtn = document.querySelector('.gallery__back');
 const nextGalleryBtn = document.querySelector('.gallery__next');
 let imgIndex = 1;
 
@@ -53,7 +74,7 @@ previusGalleryBtn.addEventListener('click', ()=>{
 });
 
 
-//Mostrar el modal de imagenes cuando hago click en la imagen principal.
+
 const imagesModal = document.querySelector('.modal-gallery__background');
 const closeModalBtn = document.querySelector('.modal-gallery__close');
 
@@ -75,7 +96,7 @@ thumbnails = [...thumbnails]
 thumbnails.forEach(thumbnail => {
     thumbnail.addEventListener('click', event=>{
         console.log(event.target.id)
-        imageContainer.style.backgroundImage = `url('../images/image-product-${event.target.id}.jpg')`
+        imageContainer.style.backgroundImage = `url('../img/sprinkles--${event.target.id}.jpg')`
     });
 });
 
@@ -123,7 +144,7 @@ closeModalNavbar.addEventListener('click', ()=>{
 
 
 
-// FUNCIONES
+
 
 function drawProductInModal(){
     productContainer.innerHTML = `
@@ -147,7 +168,7 @@ function changeNextImage(imgContainer){
     }else{
         imgIndex++;
     }
-    imgContainer.style.backgroundImage = `url('../images/image-product-${imgIndex}.jpg')`
+    imgContainer.style.backgroundImage = `url('../img/sprinkles-A${imgIndex}.jpg')`
 }
 
 function changePreviusImage(imgContainer){
@@ -156,7 +177,5 @@ function changePreviusImage(imgContainer){
     }else{
         imgIndex--;
     }
-    imgContainer.style.backgroundImage = `url('../images/image-product-${imgIndex}.jpg')`
+    imgContainer.style.backgroundImage = `url('../img/sprinkles-B${imgIndex}.jpg')`
 }
-
-

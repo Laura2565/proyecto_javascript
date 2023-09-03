@@ -53,7 +53,7 @@ body {
     }
 
     &__menu {
-        width: 50px;
+        width: 40px;
 
         &:hover {
             cursor: pointer;
@@ -63,7 +63,11 @@ body {
             display: none;
         }
     }
-
+     &__logo {
+    width: 50px;
+    left: 250px;
+    }
+   
     &__cart-avatar { 
                
         display: flex;
@@ -75,10 +79,9 @@ body {
         }
     }
 
-    &__cart {  
-       
+    &__cart {      
         position: relative;
-
+       
         &--notification {
             border: 2px solid red;
             display: none;
