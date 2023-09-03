@@ -37,7 +37,7 @@ addToCartBtn.addEventListener('click', ()=>{
 
 const cartIconBtn = document.querySelector('.header__cart');
 const cartModal = document.querySelector('.cart-modal');
-const productContainer = document.querySelector('.cart-modal__chekout-container');
+const productContainer = document.querySelector('cart-modal__chekout-container');
 
 cartIconBtn.addEventListener('click', ()=>{
     cartModal.classList.toggle('show');
@@ -113,7 +113,7 @@ modalthumbnails.forEach(modalthumbnail => {
 });
 
 // Cambiar imagen principal de modal desde flechas en el modal
-const previusModalBtn = document.querySelector('.modal-gallery__previus');
+const previusModalBtn = document.querySelector('.modal-gallery__back');
 const nextModalBtn = document.querySelector('.modal-gallery__next');
 
 nextModalBtn.addEventListener('click', ()=>{
@@ -127,7 +127,7 @@ previusModalBtn.addEventListener('click', ()=>{
 // Mostrar el navbar cuando presiono el menu de hamburgesa
 const hamburgerMenu = document.querySelector('.header__menu');
 const modalNavbar = document.querySelector('.modal-navbar__background');
-const closeModalNavbar = document.querySelector('.modal-navbar__close-icon');
+const closeModalNavbar = document.querySelector('.modal-navbar__close');
 
 modalNavbar.style.display = 'none'
 
@@ -141,24 +141,20 @@ closeModalNavbar.addEventListener('click', ()=>{
 });
 
 
-
-
-
-
-
 function drawProductInModal(){
     productContainer.innerHTML = `
-        <div class="cart-modal__details-container">
-            <img class="cart-modal__image" src="./images/image-product-1-thumbnail.jpg" alt="">
-            <div>
-            <p class="cart-modal__product">Autumn Limited Edition...</p>
-            <p class="cart-modal__price">$125 x3 <span>$375.00</span> </p>
-            </div>
-            <img class="cart-modal__delete" src="./images/icon-delete.svg" alt="delete">
-        </div>
-        <button class="cart-modal__chekount" >Checkout</button>`
+    <div class="cart-modal__details-container">
+    <img class="cart-modal__image" src="./img/sprinkles-A.jpg" alt="sprinkles">
+    <div>
+        <p class="cart-modal__product">Sprinkles</p>
+        <p class="cart-modal__precio">$100 x3 <span>$300</span></p>
+    </div>
+    <img class="cart-modal__delete" src="./img/icono-delete.jpeg" alt="delete">
+</div>
+<button class="cart-modal__checkount">Checkount</button>`
+        
     deleteProduct()
-    let priceModal = document.querySelector('.cart-modal__price');
+    let priceModal = document.querySelector('.cart-modal__precio');
     priceModal.innerHTML = `$125 x${lastValue} <span>$${lastValue*125}.00</span>`;
 }
 
