@@ -1,0 +1,33 @@
+.input {
+    height: 57px;
+    display: flex;
+    
+    &__minus {
+        width: 25px;
+        height: 100%;        
+        padding: 22px 5px;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    &__number {
+        width: 100%;
+        border: none;        
+        font-size: 1.2rem;
+        font-weight: 700;
+        text-align: center;
+        outline: none;
+
+    }
+    &__plus {
+        width: 25px;
+        height: 100%;        
+        padding: 24px 2px;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+
+
+}

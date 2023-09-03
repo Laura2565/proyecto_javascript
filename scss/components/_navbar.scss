@@ -1,0 +1,25 @@
+.navbar {
+    display: none;
+    width: 400px;
+    &__items {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+
+     &__link {
+        text-decoration: none;
+        color: black;
+        display: block;
+        height: 115px;
+        padding: 45px;
+        &:hover{
+            border-bottom: 4px solid $Pink;
+        }
+     }
+
+
+     @media (min-width: 1110px){
+        display: block;
+     }
+}
