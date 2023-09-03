@@ -22,29 +22,21 @@ body {
     width: 1200px;
   }
 }
-
-@media (min-width: 1100px) {
-  .content {
-    display: flex;
-    padding: 90px 50px;
-    gap: 124px;
-  }
-}
-
-.header {
+.main-container .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 68px;
+  width: 100%;
   padding: 0 25px;
 }
 @media (min-width: 1100px) {
-  .header {
+  .main-container .header {
     height: 112px;
     border-bottom: 1px solid;
   }
 }
-.header__navegation {
+.main-container .header__navegation {
   width: 175px;
   height: 100%;
   display: flex;
@@ -52,40 +44,41 @@ body {
   justify-content: space-between;
 }
 @media (min-width: 1100px) {
-  .header__navegation {
+  .main-container .header__navegation {
     width: 590px;
   }
 }
-.header__menu {
+.main-container .header__menu {
   width: 40px;
 }
-.header__menu:hover {
+.main-container .header__menu:hover {
   cursor: pointer;
 }
 @media (min-width: 1100px) {
-  .header__menu {
+  .main-container .header__menu {
     display: none;
   }
 }
-.header__logo {
+.main-container .header__logo {
   width: 50px;
-  left: 250px;
+  left: 20px;
 }
-.header__cart-avatar {
+.main-container .header__cart-avatar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 70px;
 }
 @media (min-width: 1100px) {
-  .header__cart-avatar {
+  .main-container .header__cart-avatar {
     width: 125px;
   }
 }
-.header__cart {
+.main-container .header__cart {
   position: relative;
+  width: 50px;
 }
-.header__cart--notification {
+.main-container .header__cart--notification {
   border: 2px solid red;
   display: none;
   background-color: black;
@@ -99,21 +92,28 @@ body {
   text-align: center;
   color: black;
 }
-.header__cart:hover {
+.main-container .header__cart:hover {
   cursor: pointer;
 }
-.header__avatar {
+.main-container .header__avatar {
   width: 24px;
 }
 @media (min-width: 1100px) {
-  .header__avatar {
+  .main-container .header__avatar {
     width: 48px;
   }
 }
-.header__avatar:hover {
+.main-container .header__avatar:hover {
   cursor: pointer;
   border: 2px solid rgb(237, 80, 187);
   border-radius: 50%;
+}
+@media (min-width: 1100px) {
+  .main-container .content {
+    display: flex;
+    padding: 90px 50px;
+    gap: 124px;
+  }
 }
 
 .navbar {
@@ -130,7 +130,7 @@ body {
   color: black;
   display: block;
   height: 115px;
-  padding: 45px;
+  padding: 25px;
 }
 .navbar__link:hover {
   border-bottom: 4px solid rgb(237, 80, 187);
