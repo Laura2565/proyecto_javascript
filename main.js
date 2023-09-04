@@ -1,4 +1,3 @@
-
 const minusBtn = document.querySelector('.input__minus');
 const plusBtn = document.querySelector('.input__plus');
 let userInput = document.querySelector('.input__number');
@@ -37,7 +36,8 @@ addToCartBtn.addEventListener('click', ()=>{
 
 const cartIconBtn = document.querySelector('.header__cart');
 const cartModal = document.querySelector('.cart-modal');
-const productContainer = document.querySelector('cart-modal__chekout-container');
+let priceModal = document.querySelector('.cart-modal__price');
+const productContainer = document.querySelector('.cart-modal__chekout-container');
 
 cartIconBtn.addEventListener('click', ()=>{
     cartModal.classList.toggle('show');
@@ -50,6 +50,7 @@ cartIconBtn.addEventListener('click', ()=>{
     
 });
 
+
 function deleteProduct(){
     const deleteProductBtn = document.querySelector('.cart-modal__delete');
     deleteProductBtn.addEventListener('click', ()=>{
@@ -58,7 +59,6 @@ function deleteProduct(){
         cartNotification.innerText = lastValue;
     });
 }
-
 
 const imageContainer = document.querySelector('.gallery__image-container');
 const previusGalleryBtn = document.querySelector('.gallery__back');
@@ -72,7 +72,6 @@ nextGalleryBtn.addEventListener('click', ()=>{
 previusGalleryBtn.addEventListener('click', ()=>{
     changePreviusImage(imageContainer);
 });
-
 
 
 const imagesModal = document.querySelector('.modal-gallery__background');
@@ -89,14 +88,14 @@ closeModalBtn.addEventListener('click', ()=>{
     imagesModal.style.display = 'none';
 });
 
-//Cambiar las imagenes principales desde los thumbnails
+
 let thumbnails = document.querySelectorAll('.gallery__thumnail')
 thumbnails = [...thumbnails]
 
 thumbnails.forEach(thumbnail => {
     thumbnail.addEventListener('click', event=>{
         console.log(event.target.id)
-        imageContainer.style.backgroundImage = `url('../img/sprinkles-A-${event.target.id}.jpg')`
+        imageContainer.style.backgroundImage = `url('../img/sprinkles-A${event.target.id}.jpg')`
     });
 });
 
@@ -108,7 +107,7 @@ modalthumbnails = [...modalthumbnails]
 modalthumbnails.forEach(modalthumbnail => {
     modalthumbnail.addEventListener('click', event=>{
         console.log(event.target.id.slice(-1))
-        modalImageContainer.style.backgroundImage = `url('../img/sprinkles-B-${event.target.id.slice(-1)}.jpg')`
+        modalImageContainer.style.backgroundImage = `url('../img/sprinkles-A${event.target.id.slice(-1)}.jpg')`
     });
 });
 
@@ -124,7 +123,7 @@ previusModalBtn.addEventListener('click', ()=>{
     changePreviusImage(modalImageContainer);
 });
 
-// Mostrar el navbar cuando presiono el menu de hamburgesa
+
 const hamburgerMenu = document.querySelector('.header__menu');
 const modalNavbar = document.querySelector('.modal-navbar__background');
 const closeModalNavbar = document.querySelector('.modal-navbar__close');
@@ -141,21 +140,24 @@ closeModalNavbar.addEventListener('click', ()=>{
 });
 
 
+
+
+
+
+
 function drawProductInModal(){
     productContainer.innerHTML = `
     <div class="cart-modal__details-container">
     <img class="cart-modal__image" src="./img/sprinkles-A.jpg" alt="sprinkles">
     <div>
-        <p class="cart-modal__product">Sprinkles</p>
-        <p class="cart-modal__price">$100 x3 <span>$300</span></p>
+      <p class="cart-modal__product">Sprinkles.</p>
+      <p class="cart-modal__price">$100 x3 <span>$300</span> </p>
     </div>
     <img class="cart-modal__delete" src="./img/icono-delete.jpeg" alt="delete">
-</div>
-<button class="cart-modal__checkount">Checkount</button>`
-        
+  </div>`
     deleteProduct()
-    let priceModal = document.querySelector('.cart-modal__precio');
-    priceModal.innerHTML = `$125 x${lastValue} <span>$${lastValue*125}.00</span>`;
+    let priceModal = document.querySelector('.cart-modal__price');
+    priceModal.innerHTML = `$100 x${lastValue} <span>$${lastValue*100}.00</span>`;
 }
 
 function changeNextImage(imgContainer){
@@ -173,5 +175,5 @@ function changePreviusImage(imgContainer){
     }else{
         imgIndex--;
     }
-    imgContainer.style.backgroundImage = `url('../img/sprinkles-B${imgIndex}.jpg')`
+    imgContainer.style.backgroundImage = `url('../img/sprinkles-A${imgIndex}.jpg')`
 }

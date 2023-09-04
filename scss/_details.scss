@@ -11,7 +11,7 @@
         line-height: 24px;
         margin-bottom: 24px;
     }
-    &__prices{
+    &__price{
         display: flex;
         justify-content: space-between;
         margin-bottom: 24px;
@@ -51,7 +51,7 @@
             font-size: 0.9em;
             margin-bottom: 37px;
         }
-        &__prices{
+        &__price{
             flex-direction: column;
             align-items: flex-start;
         }
