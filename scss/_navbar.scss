@@ -1,0 +1,50 @@
+.navbar{
+    display: none;
+    width: 400px;
+    &__items{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__link{
+        text-decoration: none;
+        color: black;
+        display: block;
+        height: 112px;
+        padding-top: 42px;
+        &:hover{
+            border-bottom: 4px solid $c-secundario;
+        }
+    }
+    @media (min-width: 1115px){
+        display: block;
+    }
+}
+
+.modal-navbar{
+    &__background{
+        @include modal-background;
+    }
+    background-color: $c-secundario;
+    width: 250px;
+    height: 100vh;
+    padding: 28px 24px;
+ 
+    &__items{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 200px;
+        list-style: none;
+        margin-top: 50px;
+    }
+    &__link{
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+        font-size: 1.1em;
+    }
+    &__close-icon:hover{
+        cursor: pointer;
+    }
+}

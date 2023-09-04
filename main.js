@@ -96,11 +96,11 @@ thumbnails = [...thumbnails]
 thumbnails.forEach(thumbnail => {
     thumbnail.addEventListener('click', event=>{
         console.log(event.target.id)
-        imageContainer.style.backgroundImage = `url('../img/sprinkles--${event.target.id}.jpg')`
+        imageContainer.style.backgroundImage = `url('../img/sprinkles-A-${event.target.id}.jpg')`
     });
 });
 
-//Cambiar las imagenes principales desde los thumbnails en el MODAL
+
 let modalthumbnails = document.querySelectorAll('.modal-gallery__thumnail');
 const modalImageContainer = document.querySelector('.modal-gallery__image-container')
 modalthumbnails = [...modalthumbnails]
@@ -108,11 +108,11 @@ modalthumbnails = [...modalthumbnails]
 modalthumbnails.forEach(modalthumbnail => {
     modalthumbnail.addEventListener('click', event=>{
         console.log(event.target.id.slice(-1))
-        modalImageContainer.style.backgroundImage = `url('../images/image-product-${event.target.id.slice(-1)}.jpg')`
+        modalImageContainer.style.backgroundImage = `url('../img/sprinkles-B-${event.target.id.slice(-1)}.jpg')`
     });
 });
 
-// Cambiar imagen principal de modal desde flechas en el modal
+
 const previusModalBtn = document.querySelector('.modal-gallery__back');
 const nextModalBtn = document.querySelector('.modal-gallery__next');
 
@@ -147,7 +147,7 @@ function drawProductInModal(){
     <img class="cart-modal__image" src="./img/sprinkles-A.jpg" alt="sprinkles">
     <div>
         <p class="cart-modal__product">Sprinkles</p>
-        <p class="cart-modal__precio">$100 x3 <span>$300</span></p>
+        <p class="cart-modal__price">$100 x3 <span>$300</span></p>
     </div>
     <img class="cart-modal__delete" src="./img/icono-delete.jpeg" alt="delete">
 </div>
