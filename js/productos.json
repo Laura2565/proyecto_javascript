@@ -1,0 +1,185 @@
+[
+    {
+        "id": "sprinkles-01",
+        "titulo": "Sprinkles A3",
+        "imagen": "./img/sprinkles/sprinklesa3.jpg",
+        "categoria": {
+            "nombre": "Sprinkles",
+            "id": "sprinkles"
+        },
+        "precio": 130
+    },
+    {
+        "id": "sprinkles-02",
+        "titulo": "Sprinkles P",
+        "imagen": "./img/sprinkles/sprinklesp.jpg",
+        "categoria": {
+            "nombre": "Sprinkles",
+            "id": "sprinkles"
+        },
+        "precio": 130
+    },
+
+    {
+        "id": "sprinkles-03",
+        "titulo": "Sprinkles U",
+        "imagen": "./img/sprinkles/sprinklesu.jpg",
+        "categoria": {
+            "nombre": "Sprinkles",
+            "id": "sprinkles"
+        },
+        "precio": 130
+    },
+    {
+        "id": "sprinkles-04",
+        "titulo": "Sprinkles J",
+        "imagen": "./img/sprinkles/sprinklesj.jpg",
+        "categoria": {
+            "nombre": "Sprinkles",
+            "id": "sprinkles"
+        },
+        "precio": 130
+    },
+    {
+        "id": "sprinkles-05",
+        "titulo": "Sprinkles S",
+        "imagen": "./img/sprinkles/sprinkless.jpg",
+        "categoria": {
+            "nombre": "Sprinkles",
+            "id": "sprinkles"
+        },
+        "precio": 130
+    },
+    {
+        "id": "sprinkles-06",
+        "titulo": "Sprinkles A2",
+        "imagen": "./img/sprinkles/sprinklesa2.jpg",
+        "categoria": {
+            "nombre": "Sprinkles",
+            "id": "sprinkles"
+        },
+        "precio": 130
+    },
+    {
+        "id": "perlas-01",
+        "titulo": "Perlas",
+        "imagen": "./img/perlas/perlasp13.jpg",
+        "categoria": {
+            "nombre": "Perlas",
+            "id": "perlas"
+        },
+        "precio": 90
+    },
+    {
+        "id": "perlas-02",
+        "titulo": "Perlas",
+        "imagen": "./img/perlas/perlasp2.jpg",
+        "categoria": {
+            "nombre": "Perlas",
+            "id": "perlas"
+        },
+        "precio": 90
+    },
+    {
+        "id": "perlas-03",
+        "titulo": "Perlas",
+        "imagen": "./img/perlas/perlasp7.jpg",
+        "categoria": {
+            "nombre": "Perlas",
+            "id": "perlas"
+        },
+        "precio": 90
+    },
+    {
+        "id": "perlas-04",
+        "titulo": "Perlas",
+        "imagen": "./img/perlas/perlasp10.jpg",
+        "categoria": {
+            "nombre": "Perlas",
+            "id": "perlas"
+        },
+        "precio": 90
+    },
+    {
+        "id": "perlas-05",
+        "titulo": "Perlas",
+        "imagen": "./img/perlas/perlasp11.jpg",
+        "categoria": {
+            "nombre": "Perlas",
+            "id": "perlas"
+        },
+        "precio": 90
+    },
+    {
+        "id": "perlas-06",
+        "titulo": "Perlas",
+        "imagen": "./img/perlas/perlasp15.jpg",
+        "categoria": {
+            "nombre": "Perlas",
+            "id": "perlas"
+        },
+        "precio": 90
+    },
+    {
+        "id": "acuarela-01",
+        "titulo": "Acuarelas",
+        "imagen": "./img/acuarelas/acuarelaamarilla.jpg",
+        "categoria": {
+            "nombre": "Acuarelas",
+            "id": "acuarelas"
+        },
+        "precio": 90
+    },
+    {
+        "id": "acuarela-02",
+        "titulo": "Acuarelas",
+        "imagen": "./img/acuarelas/acuarelaceleste.jpg",
+        "categoria": {
+            "nombre": "Acuarelas",
+            "id": "acuarelas"
+        },
+        "precio": 90
+    },
+    {
+        "id": "acuarela-03",
+        "titulo": "Acuarelas",
+        "imagen": "./img/acuarelas/acuarelanaranja.jpg",
+        "categoria": {
+            "nombre": "Acuarelas",
+            "id": "acuarelas"
+        },
+        "precio": 90
+    },
+    {
+        "id": "acuarela-04",
+        "titulo": "Acuarelas",
+        "imagen": "./img/acuarelas/acuarelarosa.jpg",
+        "categoria": {
+            "nombre": "Acuarelas",
+            "id": "acuarelas"
+        },
+        "precio": 90
+    },
+    {
+        "id": "acuarela-05",
+        "titulo": "Acuarelas",
+        "imagen": "./img/acuarelas/acuarelaverde.jpg",
+        "categoria": {
+            "nombre": "Acuarelas",
+            "id": "acuarelas"
+        },
+        "precio": 90
+    },
+    {
+        "id": "acuarela-06",
+        "titulo": "Acuarelas",
+        "imagen": "./img/acuarelas/acuarelavioleta.jpg",
+        "categoria": {
+            "nombre": "Acuarelas",
+            "id": "acuarelas"
+        },
+        "precio": 90
+    }
+   
+   
+]
